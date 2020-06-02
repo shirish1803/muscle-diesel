@@ -1,0 +1,53 @@
+#header {
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-family: monospace;
+    font-size: 30px;
+}
+#structure {
+    display: flex;
+    flex-wrap: wrap;
+    font-family: monospace;
+    text-align: center;
+    
+}
+#p1,#p3,#p4,#p5,#p6,#p7,#p8,#p2 {
+    margin-right: 50px;
+    margin-top: 50px;
+    flex: 1;
+}
+#co{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+}
+#checkout{
+    flex: 1;
+    font-size: 20px;
+    border-style: solid;
+    font-family: monospace;
+    background-color: black; 
+    position: absolute;
+    top: 250px;
+    left: auto;
+    flex: 1;
+    padding: 50px;
+    display: none;
+    color: #bcbeab;
+}
+#quantity{
+    color: green;
+}
+#pname{
+    color: #d2dd68;
+}
+#remember{
+    font-size: 12px;
+}
+#Q{
+    font-family: monospace;
+    
+}

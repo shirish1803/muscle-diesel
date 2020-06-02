@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+     <link rel="stylesheet" href="styling.css">
+      <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    
+    <header id="header">MUSCLE DIESEL</header>  
+    <div class="container" id="structure">  
+        <div class="row">
+            <div class="col-sm-4" id="p1"><img src="1.jpg"><p>Supplyment Powder</p></div>
+            <div class="col-sm-4" id="p2"><img src="2.jpg"><p>Protien Isolate</p></div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4" id="p3"><img src="3.jpg"><p>Powder With <br> Digestive <br>Enzymes</p></div>
+            <div class="col-sm-4" id="p4"><img src="4.jpg"><p>Whey Protein Concentrate </p></div>
+        </div>        
+    </div><hr>
+    <div class="container" id="structure">  
+        <div class="row">
+            <div class="col-sm-4" id="p5"><img src="5.jpg"><p>Supplyment Powder</p></div>
+            <div class="col-sm-4" id="p6"><img src="6.jpg"><p>Protien Isolate</p></div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4" id="p7"><img src="7.jpg"><p>Powder With <br> Digestive <br>Enzymes</p></div>
+            <div class="col-sm-4" id="p8"><img src="8.jpg"><p>Whey Protein Concentrate </p></div>
+        </div> 
+    </div>
+    <div class="container" id="co">
+         <div id="checkout">
+             <div ><span id="pname"></span></div>
+             <div>Quantity: <input id="Q" class="form-control" type="number" placeholder="Enter quantity"> <button id="z">That's it ?</button></div>
+             <div id="quantity" >price= <span id="price"></span> Rs</div> 
+             <form>
+                <div class="form-group">
+                    <label for="email">Phone number:</label>
+                    <input type="text" class="form-control" id="number" placeholder="Enter number">
+                  </div>
+                <div class="form-group">
+                    <label>address:</label>
+            <input type="text" class="form-control" id="pwd" placeholder="Enter address">
+            </div>
+            <div class="form-group form-check">
+              <label class="form-check-label">
+                  <input class="form-check-input" type="checkbox" ><p id="remember"> Remember me</p>
+              </label>
+            </div>
+            <button type="submit" class="btn btn-success" >Checkout</button>
+        </form>
+         </div>  
+      
+      
+    </div>
+     <script>
+             $("#p1").click(function(){
+                 $("#pname").html("Muscleblaze 100% Whey Protein Supplement Powder - 2 kg, 60 servings (Rich Milk Chocolate)");
+                 $("#price").html(3634);
+                 $("#checkout").show( 1000 );
+                 $("#z").click(function(){
+                   var y = 3634 * parseInt($("#Q").val()); 
+                   $("#price").html(y);
+                 })
+                 
+             });
+             $("#p2").click(function(){
+                 $("#pname").html("MuscleBlaze Whey Gold 100% Whey Protein Isolate (Rich Milk Chocolate, 2 kg / 4.4 lb)");
+                 $("#price").html("4299");
+                 $("#checkout").show( 1000 );
+                 $("#z").click(function(){
+                   var y = 4299 * parseInt($("#Q").val()); 
+                   $("#price").html(y);
+                 })
+             });
+             $("#p3").click(function(){
+                 $("#pname").html("MuscleXP Raw Whey Protein Concentrate 80% Powder With Digestive Enzymes, Unflavored, 1Kg (2.2lb)");
+                 $("#price").html("1149");
+                 $("#checkout").show( 1000 );
+                 $("#z").click(function(){
+                   var y = 1149 * parseInt($("#Q").val()); 
+                   $("#price").html(y);
+                 })
+             });
+             $("#p4").click(function(){
+                 $("#pname").html("NATURYZ Beginners Raw Whey Protein with Whey Protein Concentrate and Digezyme 1KG (1)");
+                 $("#price").html("1399");
+                 $("#checkout").show( 1000 );
+                 $("#z").click(function(){
+                   var y = 1399 * parseInt($("#Q").val()); 
+                   $("#price").html(y);
+                 })
+             });
+             $("#p5").click(function(){
+                 $("#pname").html("MuscleBlaze Beginner's Whey Protein Supplement (Chocolate, 1 Kg)");
+                 $("#price").html("999");
+                 $("#checkout").show( 1000 );
+                 $("#z").click(function(){
+                   var y = 999 * parseInt($("#Q").val()); 
+                   $("#price").html(y);
+                 })
+             });
+             $("#p6").click(function(){
+                 $("#pname").html("AS-IT-IS Nutrition Whey Protein Concentrate 80% (USA Made) Unflavoured, tested for purity (1 KG)");
+                 $("#price").html("1135");
+                 $("#checkout").show( 1000 );
+                 $("#z").click(function(){
+                   var y = 1135 * parseInt($("#Q").val()); 
+                   $("#price").html(y);
+                 })
+             });
+             $("#p7").click(function(){
+                 $("#pname").html("Bigmuscles Nutrition Crude Whey 1kg, Whey Protein Concentrate 80%, 24g Protein, 5.5g BCAA, 4 g Glutamine");
+                 $("#price").html("786");
+                 $("#checkout").show( 1000 );
+                 $("#z").click(function(){
+                   var y = 786 * parseInt($("#Q").val()); 
+                   $("#price").html(y);
+                 })
+             });
+             $("#p8").click(function(){
+                 $("#pname").html("MuscleBlaze Beginner's Whey Protein Supplement (Chocolate, 1 kg with Shaker)");
+                 $("#price").html("1099");
+                 $("#checkout").show( 1000 );
+                 $("#z").click(function(){
+                   var y = 1099 * parseInt($("#Q").val()); 
+                   $("#price").html(y);
+                 })
+             });
+             
+         
+      </script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
